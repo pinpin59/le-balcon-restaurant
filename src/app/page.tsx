@@ -44,7 +44,11 @@ export default function Home() {
           </div>
 
           <div className="mt-12">
-            <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors shadow-lg hover:shadow-xl">
+            <button 
+              type="button"
+              aria-label="Make a reservation at Le Balcon Restaurant"
+              className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors shadow-lg hover:shadow-xl"
+            >
               Make a Reservation
             </button>
           </div>
