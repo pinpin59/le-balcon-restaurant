@@ -2,14 +2,15 @@
 
 import { useState } from "react";
 import { MenuCategory } from "@/types";
-import { MENU_DATA } from "@/constants";
+import { useLanguage } from "@/context/LanguageContext";
 
 const MenuSection = () => {
+  const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState<MenuCategory>(
     MenuCategory.MAINS,
   );
 
-  const filteredItems = MENU_DATA.filter(
+  const filteredItems = t.menu.items.filter(
     (item) => item.category === activeCategory,
   );
 
@@ -20,7 +21,7 @@ const MenuSection = () => {
     >
       <div className="max-w-5xl mx-auto space-y-24">
         <div className="text-center space-y-4">
-          <h2 className="text-5xl md:text-7xl serif">La Carte</h2>
+          <h2 className="text-5xl md:text-7xl serif">{t.menu.title}</h2>
           <div className="flex justify-center space-x-12 pt-8">
             {Object.values(MenuCategory).map((cat) => (
               <button
@@ -28,7 +29,8 @@ const MenuSection = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`text-[10px] uppercase tracking-[0.4em] transition-all duration-300 pb-2 border-b ${activeCategory === cat ? "text-white border-white" : "text-zinc-500 border-transparent hover:text-zinc-300"}`}
               >
-                {cat}
+                {t.menu.categories[cat as keyof typeof t.menu.categories] ??
+                  cat}
               </button>
             ))}
           </div>
@@ -54,7 +56,7 @@ const MenuSection = () => {
 
         <div className="text-center pt-12">
           <p className="text-xs text-zinc-600 uppercase tracking-widest">
-            Menu de dégustation disponible en 7 services — 185€
+            {t.menu.tasting}
           </p>
         </div>
       </div>

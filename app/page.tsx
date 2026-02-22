@@ -1,5 +1,7 @@
+import AboutSection from "@/components/features/AboutSection";
 import Gallery from "@/components/features/Gallery";
 import MenuSection from "@/components/features/MenuSection";
+import Reservation from "@/components/features/Reservation";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/layout/Hero";
 import Navbar from "@/components/layout/Navbar";
@@ -10,28 +12,12 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <section id="about" className="py-32 px-6 md:px-24">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <span className="text-xs uppercase tracking-[0.5em] text-zinc-500">
-              {"L'Expérience"}
-            </span>
-            <h2 className="text-4xl md:text-6xl serif italic">
-              {"L'Art de prendre de la hauteur"}
-            </h2>
-            <p className="text-lg md:text-xl text-zinc-400 font-light leading-relaxed">
-              {
-                "Perché au-dessus du tumulte parisien, Le Balcon offre une parenthèse suspendue. Entre ombre et lumière, notre cuisine se veut pure, brute, et résolument moderne. Chaque assiette est un monochrome de saveurs, une quête de l'essentiel."
-              }
-            </p>
-            <div className="pt-8">
-              <div className="h-px w-24 bg-white mx-auto"></div>
-            </div>
-          </div>
-        </section>
+        <AboutSection />
         <section className="flex justify-center" id="gallery">
           <Gallery />
         </section>
         <MenuSection />
+        <Reservation />
         <Footer />
       </main>
     </div>
