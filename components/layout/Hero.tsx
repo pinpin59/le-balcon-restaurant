@@ -12,7 +12,7 @@ const Hero = () => {
 
       {/* Atmospheric Background Image */}
       <Image
-        src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2000"
+        src="/images/hero.webp"
         alt="Bar Atmosphere"
         fill
         className="object-cover opacity-40 mix-blend-luminosity grayscale"

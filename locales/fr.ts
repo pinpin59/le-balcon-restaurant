@@ -14,6 +14,11 @@ export const fr = {
     discover: "Découvrir l'Essence",
     scroll: "Scroll",
   },
+  gallery: {
+    place: "Le Lieu",
+    gesture: "Le Geste",
+    material: "La Matière",
+  },
   about: {
     tagline: "L'Expérience",
     title: "L'Art de prendre de la hauteur",

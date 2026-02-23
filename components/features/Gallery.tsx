@@ -1,11 +1,15 @@
+"use client";
+import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 
 const Gallery = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 h-[80vh] bg-black w-full">
       <div className="relative group overflow-hidden border-r border-zinc-900 h-full">
         <Image
-          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800"
+          src="/images/place.webp"
           alt="Gastronomy 1"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
@@ -14,13 +18,13 @@ const Gallery = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-xs uppercase tracking-[0.5em] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-            La Matière
+            {t.gallery.place}
           </span>
         </div>
       </div>
       <div className="relative group overflow-hidden border-r border-zinc-900 h-full">
         <Image
-          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800"
+          src="/images/gesture.webp"
           alt="Gastronomy 2"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
@@ -29,13 +33,13 @@ const Gallery = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-xs uppercase tracking-[0.5em] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-            Le Geste
+            {t.gallery.gesture}
           </span>
         </div>
       </div>
       <div className="relative group overflow-hidden h-full">
         <Image
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800"
+          src="/images/material.webp"
           alt="Gastronomy 3"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
@@ -44,7 +48,7 @@ const Gallery = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-xs uppercase tracking-[0.5em] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-            Le Lieu
+            {t.gallery.material}
           </span>
         </div>
       </div>

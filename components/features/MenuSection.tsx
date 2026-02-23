@@ -27,7 +27,7 @@ const MenuSection = () => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`text-[10px] uppercase tracking-[0.4em] transition-all duration-300 pb-2 border-b ${activeCategory === cat ? "text-white border-white" : "text-zinc-500 border-transparent hover:text-zinc-300"}`}
+                className={`text-[10px] uppercase tracking-[0.4em] transition-all duration-300 pb-2 border-b ${activeCategory === cat ? "text-white border-white" : "text-zinc-400 border-transparent hover:text-zinc-200"}`}
               >
                 {t.menu.categories[cat as keyof typeof t.menu.categories] ??
                   cat}
@@ -47,7 +47,7 @@ const MenuSection = () => {
                   {item.price}
                 </span>
               </div>
-              <p className="text-sm text-zinc-500 font-light leading-relaxed max-w-sm italic">
+              <p className="text-sm text-zinc-400 font-light leading-relaxed max-w-sm italic">
                 {item.description}
               </p>
             </div>
@@ -55,7 +55,7 @@ const MenuSection = () => {
         </div>
 
         <div className="text-center pt-12">
-          <p className="text-xs text-zinc-600 uppercase tracking-widest">
+          <p className="text-xs text-zinc-400 uppercase tracking-widest">
             {t.menu.tasting}
           </p>
         </div>

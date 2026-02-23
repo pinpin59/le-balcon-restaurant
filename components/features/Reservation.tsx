@@ -63,7 +63,7 @@ const Reservation = () => {
           <div className="space-y-2">
             <label
               htmlFor="name"
-              className="text-xs uppercase tracking-widest text-zinc-400"
+              className="text-xs uppercase tracking-widest text-zinc-600"
             >
               {r.labelName}
             </label>
@@ -80,7 +80,7 @@ const Reservation = () => {
           <div className="space-y-2">
             <label
               htmlFor="email"
-              className="text-xs uppercase tracking-widest text-zinc-400"
+              className="text-xs uppercase tracking-widest text-zinc-600"
             >
               {r.labelEmail}
             </label>
@@ -97,7 +97,7 @@ const Reservation = () => {
           <div className="space-y-2">
             <label
               htmlFor="phone"
-              className="text-xs uppercase tracking-widest text-zinc-400"
+              className="text-xs uppercase tracking-widest text-zinc-600"
             >
               {r.labelPhone}
             </label>
@@ -114,7 +114,7 @@ const Reservation = () => {
           <div className="space-y-2">
             <label
               htmlFor="date"
-              className="text-xs uppercase tracking-widest text-zinc-400"
+              className="text-xs uppercase tracking-widest text-zinc-600"
             >
               {r.labelDate}
             </label>
@@ -130,7 +130,7 @@ const Reservation = () => {
           <div className="space-y-2">
             <label
               htmlFor="time"
-              className="text-xs uppercase tracking-widest text-zinc-400"
+              className="text-xs uppercase tracking-widest text-zinc-600"
             >
               {r.labelTime}
             </label>
@@ -150,7 +150,7 @@ const Reservation = () => {
           <div className="space-y-2">
             <label
               htmlFor="guests"
-              className="text-xs uppercase tracking-widest text-zinc-400"
+              className="text-xs uppercase tracking-widest text-zinc-600"
             >
               {r.labelGuests}
             </label>

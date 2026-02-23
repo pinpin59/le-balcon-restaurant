@@ -16,6 +16,11 @@ export const en: Translations = {
     discover: "Discover Our Essence",
     scroll: "Scroll",
   },
+  gallery: {
+    place: "The Place",
+    gesture: "The Gesture",
+    material: "The Material",
+  },
   about: {
     tagline: "The Experience",
     title: "The Art of Rising Above",
