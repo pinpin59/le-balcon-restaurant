@@ -13,6 +13,9 @@ export const metadata: Metadata = {
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
+  alternates: {
+    canonical: "https://le-balcon-restaurant.vercel.app",
+  },
   title: "Le Balcon — Restaurant Gastronomique à Paris",
   description:
     "Le Balcon, restaurant gastronomique perché au-dessus de Paris. Une cuisine pure, brute et moderne. Réservez votre table dès maintenant.",
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
     title: "Le Balcon — Restaurant Gastronomique à Paris",
     description:
       "Une cuisine pure, brute et moderne. Réservez votre table au Balcon.",
-    url: "https://le-balcon.fr",
+    url: "https://le-balcon-restaurant.vercel.app",
     siteName: "Le Balcon",
     locale: "fr_FR",
     type: "website",

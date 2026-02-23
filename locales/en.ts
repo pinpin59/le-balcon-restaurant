@@ -8,6 +8,8 @@ export const en: Translations = {
     reservation: "Reservation",
     closeMenu: "Close menu",
     openMenu: "Open menu",
+    contact: "Contact",
+    mobile: "01 23 45 67 89",
   },
   hero: {
     welcome: "Welcome to Paris",
@@ -254,6 +256,8 @@ export const en: Translations = {
     title: "the Balcony",
     address: "12 Avenue des Champs-Élysées, 75008 Paris",
     press: "Press",
+    instagram: "Instagram",
+    facebook: "Facebook",
     rights: "© 2026 Le Balcon. All rights reserved.",
   },
 };

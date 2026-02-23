@@ -6,6 +6,8 @@ export const fr = {
     reservation: "Réservation",
     closeMenu: "Fermer le menu",
     openMenu: "Ouvrir le menu",
+    contact: "Contact",
+    mobile: "01 23 45 67 89",
   },
   hero: {
     welcome: "Bienvenue à Paris",
@@ -258,6 +260,8 @@ export const fr = {
     title: "Le Balcon",
     address: "12 Avenue des Champs-Élysées, 75008 Paris",
     press: "Presse",
+    instagram: "Instagram",
+    facebook: "Facebook",
     rights: "© 2026 Le Balcon. Tous droits réservés.",
   },
 };

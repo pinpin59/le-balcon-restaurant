@@ -16,10 +16,10 @@ const Footer = () => {
 
         <div className="flex justify-center space-x-8 text-zinc-400 text-xs tracking-widest uppercase py-4">
           <a href="#" className="hover:text-white transition-colors">
-            Instagram
+            {t.footer.instagram}
           </a>
           <a href="#" className="hover:text-white transition-colors">
-            Facebook
+            {t.footer.facebook}
           </a>
           <a href="#" className="hover:text-white transition-colors">
             {t.footer.press}
